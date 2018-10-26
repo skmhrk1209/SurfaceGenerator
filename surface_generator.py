@@ -103,7 +103,7 @@ with tf.Session() as session:
     mesh_sphere.vertices = open3d.Vector3dVector(vertices * scale)
     mesh_sphere.vertex_colors = open3d.Vector3dVector(colors)
 
-    mesh_sphere.compute_vertex_normals()
+    # mesh_sphere.compute_vertex_normals()
 
     def call_back(visualizer):
         visualizer.get_render_option().background_color = np.asarray([0, 0, 0])
